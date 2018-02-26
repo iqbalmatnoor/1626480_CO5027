@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AssignmentWD.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+<title>    
+    <asp:ContentPlaceHolder ID="Title" runat="server">
+       </asp:ContentPlaceHolder></title>
+<link href="CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body runat="server">
+        <div id="wrapper">
+            <div id="banner">
+                <p>Shounen Jump</p>
+            </div>
+
+            <div id="navigation">
+                <ul id="nav">
+                    <li><a href="~/Default.aspx" runat="server">Home</a></li>
+                    <li><a href="~/Product.aspx" runat="server">Product</a></li>
+                    <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+             <asp:ContentPlaceHolder ID="cont" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <div id="footer">
+                <p>All right served. &#169;2018</p>
+            </div>
+        </div>
+</body>
+</html>
