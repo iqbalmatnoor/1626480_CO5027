@@ -117,7 +117,7 @@
 #p1 {
     width: 150px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 18px;
 }
 
 #p2 {
@@ -162,15 +162,14 @@
 
 #pro1 p {
     width: 460px;
-    font-size: 25px;
-    text-align-last: justify;
+    font-size: 18px;
 }
 
 #proinfo1 p {
     width: 450px;
     float: right;
     margin: -225px 80px 0 0;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .cart input {

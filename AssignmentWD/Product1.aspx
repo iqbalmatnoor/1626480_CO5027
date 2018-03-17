@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="AssignmentWD.Product" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product1.aspx.cs" Inherits="AssignmentWD.Product" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 Product: Naruto Shippuden Volume 70
 </asp:Content>

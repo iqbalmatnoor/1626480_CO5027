@@ -16,23 +16,23 @@ Home: Shounen Jump
     <img src="~/Image/Ftvol59.png" runat="server" class="img05"/>
 
     <div id="p1">
-    <p><a href="Product.aspx">Shippuden Volume 70</a> 
+    <p><a href="Product1.aspx">Shippuden Volume 70</a> 
         <br /><br />Price : $9.90 BND</p></div>
   
         <div id="p2">
-    <p>Bleach Volume 74<br />
+    <p><a href="Product2.aspx">Bleach Volume 74</a><br />
         <br />Price : $10.50 BND</p></div>
 
             <div id="p3">
-    <p>Shokugeki no Soma Volume 13<br />
+    <p><a href="Product3.aspx">Shokugeki no Soma Volume 13<br /></a>
         <br />Price: $10.00 BND</p></div>
 
     <div id="p4">
-    <p>One Piece Volume 64<br />
+    <p><a href="Product4.aspx">One Piece Volume 64<br /></a>
         <br />Price: $9.50 BND</p></div>
 
     <div id="p5">
-    <p>Fairy Tail Volume 59<br />
+    <p><a href="Product5.aspx">Fairy Tail Volume 59<br /></a>
         <br />Price: $10.50 BND</p><br /></div>
 
     <h1> Top Rated</h1>
