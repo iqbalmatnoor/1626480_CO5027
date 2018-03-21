@@ -8,8 +8,6 @@
 
     <h3>Please fill in the require field(*).</h3>
 
-    <form class ="form" runat="server">
-
         <p></p>
 
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
@@ -37,7 +35,7 @@
             <asp:Label ID="lblContact" runat="server" Text="Contact Number" AssociatedControlID="txtContact"></asp:Label> 
             <br />
             <br />
-            <asp:TextBox ID="txtContact" runat="server" placeholder="+673 1234567"></asp:TextBox>
+            <asp:TextBox ID="txtContact" runat="server" Text="+673" placeholder="+673 1234567"></asp:TextBox>
         </p>
 
         <p class="text">
@@ -55,7 +53,6 @@
         <p class="litResult">
             <asp:Literal ID="litResult" runat="server"></asp:Literal>
         </p>
-    </form>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
             <div id="map"></div>

@@ -26,10 +26,16 @@
     </style>
 </head>
 <body runat="server">
+        <form id="form1" runat="server">
         <div id="wrapper">
             <div id="banner">
                 <p>Shounen Jump</p>
             </div>
+
+                <div id="emailing">
+                    <asp:HyperLink ID="hLink1" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+                    <asp:HyperLink ID="hLink2" runat="server" NavigateUrl="~/Login.aspx">Log in</asp:HyperLink>
+                </div>
 
             <div id="navigation">
                 <ul id="nav">
@@ -45,6 +51,7 @@
                 </asp:ContentPlaceHolder>
             </div>
 
+
                             <div id="Map">
                     <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
                        </asp:ContentPlaceHolder>
@@ -54,6 +61,8 @@
                 <p>All right served. &#169;2018</p>
             </div>
         </div>
+
+        </form>
 
 </body>
 </html>
