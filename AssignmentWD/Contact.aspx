@@ -55,7 +55,7 @@
         </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
-            <div id="map"></div>
+    <div id="map"></div>
     <script>
         var map;
         function initMap() {

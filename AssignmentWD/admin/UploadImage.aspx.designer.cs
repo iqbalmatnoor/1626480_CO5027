@@ -10,7 +10,16 @@
 namespace AssignmentWD.admin {
     
     
-    public partial class index {
+    public partial class UploadImage {
+        
+        /// <summary>
+        /// imageFileUploadControl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload imageFileUploadControl;
         
         /// <summary>
         /// Button1 control.
@@ -20,5 +29,14 @@ namespace AssignmentWD.admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// CurrentImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage;
     }
 }

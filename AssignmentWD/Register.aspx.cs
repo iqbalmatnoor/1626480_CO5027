@@ -24,7 +24,7 @@ namespace AssignmentWD
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
-            IdentityRole adminRole = new IdentityRole("Admin");
+            IdentityRole adminRole = new IdentityRole("RegisteredUser");
             roleManager.Create(adminRole);
 
             var user = new IdentityUser()
@@ -36,7 +36,7 @@ namespace AssignmentWD
             IdentityResult result = manager.Create(user, txtRegPassword.Text);
             if (result.Succeeded)
             {
-                manager.AddToRole(user.Id, "Admin");
+                manager.AddToRole(user.Id, "RegisteredUser");
                 manager.Update(user);
                 litRegisterError.Text = "Registration Successful";
             }

@@ -193,8 +193,6 @@
 
 input, textarea {
     max-width: 100%;
-    width: 365px;
-    height: 30px;
     padding: 0 8px 0 8px;
     border-radius: 2px;
     border: 1px solid #000000;
