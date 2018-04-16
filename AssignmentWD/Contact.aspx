@@ -55,7 +55,11 @@
         </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
+<<<<<<< HEAD
     <div id="map">
+=======
+    <div id="map"></div>
+>>>>>>> 9c9eeb154aeae62b0e6e7df9966b151816934f0f
     <script>
       var map;
       function initMap() {

@@ -22,6 +22,18 @@ namespace AssignmentWD.admin {
         protected global::System.Web.UI.WebControls.FormView FormView1;
         
         /// <summary>
+<<<<<<< HEAD
+=======
+        /// SqlDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        
+        /// <summary>
+>>>>>>> 9c9eeb154aeae62b0e6e7df9966b151816934f0f
         /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>

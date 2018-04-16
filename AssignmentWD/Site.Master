@@ -51,11 +51,15 @@
                 </asp:ContentPlaceHolder>
             </div>
 
+<<<<<<< HEAD
         </div>
 
         </form>
 
                         <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
+=======
+                    <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
+>>>>>>> 9c9eeb154aeae62b0e6e7df9966b151816934f0f
                        </asp:ContentPlaceHolder>
 
           <div id="footer">
