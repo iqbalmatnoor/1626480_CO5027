@@ -51,18 +51,16 @@
                 </asp:ContentPlaceHolder>
             </div>
 
-
-                            <div id="Map">
-                    <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
-                       </asp:ContentPlaceHolder>
-                </div>
-
-            <div id="footer">
-                <p>All right served. &#169;2018</p>
-            </div>
         </div>
 
         </form>
+
+                        <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
+                       </asp:ContentPlaceHolder>
+
+          <div id="footer">
+                <p>All right served. &#169;2018</p>
+            </div>
 
 </body>
 </html>

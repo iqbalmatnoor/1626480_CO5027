@@ -6,6 +6,9 @@
     <h1>Welcome to Admin Panel</h1>
 
     <p>Default page for admin</p>
+    <p>
+        <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>
