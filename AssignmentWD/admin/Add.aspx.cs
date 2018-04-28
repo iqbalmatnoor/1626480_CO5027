@@ -18,5 +18,16 @@ namespace AssignmentWD.admin
         {
             Response.Redirect("~/admin/List.aspx");
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            FileUpload fle = (FileUpload)FormView1.FindControl("FileUpload1") as FileUpload;
+            if (fle.HasFile)
+            {
+                fle.SaveAs(Server.MapPath("~/admin/ProductImages/" + fle.FileName + ".jpg"));
+                Label li = (Label)FormView1.FindControl("Label1") as Label;
+                li.Text = "~/admin/ProductImages/" + fle.FileName + ".jpg";
+            }
+        }
     }
 }

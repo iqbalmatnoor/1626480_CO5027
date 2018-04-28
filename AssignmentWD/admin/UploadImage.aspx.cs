@@ -21,11 +21,17 @@ namespace AssignmentWD.admin
         {
             string productId = Request.QueryString["Id"];
 
-            string filename = productId = ".jpg";
+            string filename = productId + ".jpg";
 
             string savelocation = Server.MapPath("~/admin/ProductImages/" + filename);
 
             imageFileUploadControl.SaveAs(savelocation);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/admin/List.aspx");
+
         }
     }
 }

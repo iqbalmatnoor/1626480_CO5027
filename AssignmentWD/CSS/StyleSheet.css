@@ -1,7 +1,4 @@
-﻿body {
-
-}
-/*Site.Master*/
+﻿/*Site.Master*/
 #wrapper
 {
     width: 1080px;
@@ -53,9 +50,15 @@
     float:left;
     position:relative;
     border: 3px hidden #E3E3E3;
-    width: 240px;
+    width: 180px;
     margin-bottom: 3px;
     text-align:center;
+}
+
+#nav img 
+{
+    height:50px;
+    width:50px;
 }
 
 #nav a:link, #nav a:active, #nav a:visited{
@@ -88,106 +91,10 @@
 }
 
 /*Default.aspx*/
-.img01 {
-    height: 195px;
-    width: 175px;
-    border: 1px solid #000000;
-}
 
-
-.img02 {
-    height: 195px;
-    width: 175px;
-    border: 1px solid #000000;
-    margin-left: 42px;
-}
-
-
-
-.img03 {
-    height: 195px;
-    width: 175px;
-    border: 1px solid #000000;
-    margin-left: 42px;
-}
-
-.img04 {
-    height: 195px;
-    width: 175px;
-    border: 1px solid #000000;
-    margin-left: 42px;
-}
-
-.img05 {
-    height: 195px;
-    width: 175px;
-    border: 1px solid #000000;
-    margin-left: 42px;
-}
-
-#p1 {
-    width: 150px;
-    text-align: center;
-    margin-left: 18px;
-}
-
-#p2 {
-    width: 130px;
-    text-align: center;
-    margin: -70px 35px 0 250px;
-}
-
-#p3 {
-    width: 130px;
-    text-align: center;
-    margin: -75px 35px 0 470px;
-}
-
-#p4 {
-    width: 145px;
-    text-align: center;
-    margin: -85px 35px 0 690px;
-}
-
-#p5 {
-    width: 145px;
-    text-align: center;
-    margin: -75px 35px 0 910px;
-}
 
 /*Product1.aspx*/
 
-#pro1 img{
-    height: 400px;
-    width: 280px;
-    margin: 30px 0 0 30px;
-}
-
-#pro1 h1 {
-    text-align: center;
-}
-
-#pro1 h2 {
-    width: 460px;
-}
-
-#pro1 p {
-    width: 460px;
-    font-size: 18px;
-}
-
-#proinfo1 p {
-    width: 450px;
-    float: right;
-    margin: -225px 80px 0 0;
-    font-size: 18px;
-}
-
-.cart input {
-    width: 100px;
-    margin-left: 400px;
-    margin-bottom: 500px;
-}
 
 /*Contact.aspx*/
 
@@ -198,6 +105,7 @@ input, textarea {
     border: 1px solid #000000;
     background: #FFFFFF;
     font-size: 15px;
+    height: 25px;
 }
 
 textarea {
@@ -211,16 +119,13 @@ textarea {
     width:100px;
 }
 
-#map {
-    height: 100%;
-    border: 2px solid black;
-    margin: 4px;
-}
 #footer {
     font-size:18px;
     clear: both;
     width: auto;
     height: 40px;
     margin-top: 40px;
-    background-image: url('../Image/img1.jpg');
 }
+
+/* Edit.aspx*/
+

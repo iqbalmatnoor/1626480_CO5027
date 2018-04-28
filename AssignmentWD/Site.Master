@@ -1,7 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AssignmentWD.Site" %>
-
 <!DOCTYPE html>
-
 <html>
 
 <head runat="server">
@@ -40,9 +38,10 @@
             <div id="navigation">
                 <ul id="nav">
                     <li><a href="~/Default.aspx" runat="server">Home</a></li>
-                    <li><a href="#">Product</a></li>
+                    <li><a href="~/Product1.aspx" runat="server">Product</a></li>
                     <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="~/admin/index.aspx" runat="server">Admin</a></li>
+                    <li><a href="~/User/Viewcart.aspx" runat="server"><img src="Image/cart.jpg" alt="Cart" /></a>
                 </ul>
             </div>
 
@@ -51,15 +50,10 @@
                 </asp:ContentPlaceHolder>
             </div>
 
-<<<<<<< HEAD
         </div>
 
         </form>
-
-                        <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
-=======
                     <asp:ContentPlaceHolder ID="GoogleMap" runat="server">
->>>>>>> 9c9eeb154aeae62b0e6e7df9966b151816934f0f
                        </asp:ContentPlaceHolder>
 
           <div id="footer">

@@ -11,7 +11,7 @@
     <br />
     <br />
     <asp:Label ID="Label2" runat="server" Text="Password: "></asp:Label>
-    <asp:TextBox ID="txtRegPassword" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtRegPassword" runat="server" TextMode="Password"></asp:TextBox>
     <br />
     <br />
     <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click" />

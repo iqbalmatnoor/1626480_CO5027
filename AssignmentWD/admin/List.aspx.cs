@@ -23,5 +23,12 @@ namespace AssignmentWD.admin
         {
 
         }
+        protected void add_Click1(object sender, EventArgs e)
+        {
+            {
+                
+
+            }
+        }
     }
 }

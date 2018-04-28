@@ -20,5 +20,15 @@ namespace AssignmentWD.admin
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             Response.Redirect("~/Login.aspx");
         }
+
+        protected void addBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/admin/Add.aspx");
+        }
+
+        protected void listBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/admin/List.aspx");
+        }
     }
 }

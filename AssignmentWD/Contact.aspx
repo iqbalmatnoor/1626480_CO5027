@@ -55,18 +55,18 @@
         </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
-<<<<<<< HEAD
     <div id="map">
-=======
-    <div id="map"></div>
->>>>>>> 9c9eeb154aeae62b0e6e7df9966b151816934f0f
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 4.8857362, lng: 114.9294805 },
+                center: { lat: 4.885731, lng: 114.931669 },
                 zoom: 18
-            });
+          });
+          var marker = new google.maps.Marker({
+              position: { lat: 4.885731, lng: 114.931669  },
+              map: map
+          })
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMf4oGLV7-GHk9wuXGtL3e7UTYDwPl_3s&callback=initMap" type="text/javascript"></script>
