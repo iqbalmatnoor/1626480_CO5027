@@ -16,7 +16,7 @@ namespace AssignmentWD.admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/admin/List.aspx");
+            Response.Redirect("~/admin/index.aspx");
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)

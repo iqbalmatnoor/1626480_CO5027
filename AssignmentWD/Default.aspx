@@ -2,31 +2,32 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 Home: Shounen Jump
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cont" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="cont" runat="server">
             <h1> List of Products</h1>
 
         <asp:Repeater ID="ProductList" runat="server" DataSourceID="SqlDataSource1">
-            <HeaderTemplate><ul></HeaderTemplate>
+            <HeaderTemplate><div></HeaderTemplate>
             <ItemTemplate>
-
-                <li>
-                   <a href="<%# Eval("Product_ID", "Product1.aspx?Id={0}") %>">
-                    <asp:Image ID="dspImg" height= "100" width= "100" runat="server" ImageUrl='<%# Eval("Image") %>' /></a>
-                    <div class="proName">
-                        <p><%# Eval("Product_Name")%></p>
-                        <div class="proDesc">
-                            <p>Quantity: <%# Eval("Quantity") %></p>
-                            <p><%# Eval("Product_Desc") %></p>
-                            <strong class="proPrice">Price : <%# Convert.ToDecimal(Eval("Price")).ToString("c") %></strong>
-                        </div>
-                    </div>
-                   
-                    </a>
-                </li>
+                    <table id="tblItem">
+                        <tr>
+                            <td>
+                        <a href="<%# Eval("Product_ID", "Product1.aspx?Id={0}") %>">
+                        <asp:Image ID="dspImg" height= "230" width= "190" runat="server" alt="Product img" ImageUrl='<%# Eval("Image") %>'/></a>
+                                <div>
+                             <p><%# Eval("Product_Name")%></p></div>
+                                  <div><p>Quantity: <%# Eval("Quantity") %></p>
+                                  <p><%# Eval("Product_Desc") %></p></div>
+                                        <strong class="proPrice">Price : <%# Convert.ToDecimal(Eval("Price")).ToString("c") %></strong>
+                            </td>
+                        </tr>
+                    </table>
             </ItemTemplate>
-
-            <FooterTemplate></ul></FooterTemplate>
+            <FooterTemplate></div></FooterTemplate>
         </asp:Repeater>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626480_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626480_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [tblProduct] WHERE ([Quantity] &gt; @Quantity)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="0" Name="Quantity" Type="Int32" />
+            </SelectParameters>
+            </asp:SqlDataSource>
         <br />
 </asp:Content>

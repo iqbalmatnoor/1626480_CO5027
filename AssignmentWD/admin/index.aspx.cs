@@ -21,12 +21,12 @@ namespace AssignmentWD.admin
             Response.Redirect("~/Login.aspx");
         }
 
-        protected void addBtn_Click(object sender, EventArgs e)
+        protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/admin/Add.aspx");
         }
 
-        protected void listBtn_Click(object sender, EventArgs e)
+        protected void Button3_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/admin/List.aspx");
         }

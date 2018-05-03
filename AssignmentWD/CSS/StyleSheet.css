@@ -91,7 +91,9 @@
 }
 
 /*Default.aspx*/
-
+#cartDisp {
+    float: right;
+}
 
 /*Product1.aspx*/
 
@@ -105,8 +107,7 @@ input, textarea {
     border: 1px solid #000000;
     background: #FFFFFF;
     font-size: 15px;
-    height: 25px;
-}
+    }
 
 textarea {
     width: 365px;
@@ -120,12 +121,30 @@ textarea {
 }
 
 #footer {
+    border-top: solid;
     font-size:18px;
+    text-align:center;
     clear: both;
-    width: auto;
-    height: 40px;
-    margin-top: 40px;
 }
 
 /* Edit.aspx*/
 
+/*Map*/
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 400px;
+    width: 600px;
+    margin:auto;
+}
+
+#tblItem {
+    float: left;
+    border-collapse: collapse;
+    width: 45%;
+    margin: 13px;
+}
+
+#tblItem td{
+    padding: 5px 10px;
+}

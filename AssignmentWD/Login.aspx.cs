@@ -51,6 +51,10 @@ namespace AssignmentWD
                 {
                     Response.Redirect("~/admin/index.aspx");
                 }
+                else if (userRoles.Equals("RegisteredUser"))
+                {
+                    Response.Redirect("~/User/Viewcart.aspx");
+                }
             }
         }
     }

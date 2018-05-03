@@ -16,7 +16,7 @@ namespace AssignmentWD.admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/admin/Add.aspx");
+            Response.Redirect("~/admin/index.aspx");
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

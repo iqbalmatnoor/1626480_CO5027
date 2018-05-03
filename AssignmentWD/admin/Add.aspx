@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="AssignmentWD.admin.Add" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Add Product
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cont" runat="server">
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="Product_ID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Height="262px" Width="678px">
@@ -109,7 +110,7 @@
     </UpdateParameters>
 </asp:SqlDataSource>
     <br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="List Product" />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Admin Panel" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
     </asp:Content>

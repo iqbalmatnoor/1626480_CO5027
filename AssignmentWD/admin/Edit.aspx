@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="AssignmentWD.admin.Edit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    Edit Product
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cont" runat="server">
     <h1> Edit Page</h1>
@@ -72,7 +73,7 @@
             <asp:Label ID="PriceLabel" runat="server" Text='<%# Convert.ToDecimal(Eval("Price")).ToString("c") %>' />
             <br />
             Image:
-            <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Image") %>' />
+            <asp:Image ID="Image1" runat="server" height="350" Width="275" ImageUrl='<%# Eval("Image") %>' />
             <br />
             <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
             &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />

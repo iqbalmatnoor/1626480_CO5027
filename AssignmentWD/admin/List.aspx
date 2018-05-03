@@ -1,18 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="List.aspx.cs" Inherits="AssignmentWD.admin.List" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    List Product
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cont" runat="server">
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Product_ID" DataSourceID="SqlDataSource1">
         <Columns>
-            <asp:CommandField ShowDeleteButton="True" />
-            <asp:BoundField DataField="Product_ID" HeaderText="Product_ID" ReadOnly="True" SortExpression="Product_ID" />
-            <asp:BoundField DataField="Product_Name" HeaderText="Product_Name" SortExpression="Product_Name" />
-            <asp:BoundField DataField="Product_Desc" HeaderText="Product_Desc" SortExpression="Product_Desc" />
-            <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+            <asp:BoundField DataField="Product_ID" HeaderText="Product ID" ReadOnly="True" SortExpression="Product_ID" >
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:BoundField>
+            <asp:BoundField DataField="Product_Name" HeaderText="Product Name" SortExpression="Product_Name" />
+            <asp:BoundField DataField="Product_Desc" HeaderText="Description" SortExpression="Product_Desc" />
+            <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" >
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:BoundField>
+            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" >
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:BoundField>
             <asp:ImageField DataImageUrlField="Image" HeaderText="Image">
+                <ItemStyle HorizontalAlign="Center" Height="150px" Width="125px" />
             </asp:ImageField>
-            <asp:HyperLinkField DataNavigateUrlFields="Product_ID" DataNavigateUrlFormatString="Edit.aspx?Id={0}" HeaderText="Edit" Text="Edit" />
+            <asp:HyperLinkField DataNavigateUrlFields="Product_ID" DataNavigateUrlFormatString="Edit.aspx?Id={0}" HeaderText="Edit" Text="Edit" >
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:HyperLinkField>
+            <asp:CommandField ShowDeleteButton="True" HeaderText="Action" >
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:CommandField>
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:db_1626480_co5027_asgConnectionString %>" DeleteCommand="DELETE FROM [tblProduct] WHERE [Product_ID] = @original_Product_ID AND (([Product_Name] = @original_Product_Name) OR ([Product_Name] IS NULL AND @original_Product_Name IS NULL)) AND (([Product_Desc] = @original_Product_Desc) OR ([Product_Desc] IS NULL AND @original_Product_Desc IS NULL)) AND (([Quantity] = @original_Quantity) OR ([Quantity] IS NULL AND @original_Quantity IS NULL)) AND (([Price] = @original_Price) OR ([Price] IS NULL AND @original_Price IS NULL)) AND (([Image] = @original_Image) OR ([Image] IS NULL AND @original_Image IS NULL))" InsertCommand="INSERT INTO [tblProduct] ([Product_ID], [Product_Name], [Product_Desc], [Quantity], [Price], [Image]) VALUES (@Product_ID, @Product_Name, @Product_Desc, @Quantity, @Price, @Image)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tblProduct]" UpdateCommand="UPDATE [tblProduct] SET [Product_Name] = @Product_Name, [Product_Desc] = @Product_Desc, [Quantity] = @Quantity, [Price] = @Price, [Image] = @Image WHERE [Product_ID] = @original_Product_ID AND (([Product_Name] = @original_Product_Name) OR ([Product_Name] IS NULL AND @original_Product_Name IS NULL)) AND (([Product_Desc] = @original_Product_Desc) OR ([Product_Desc] IS NULL AND @original_Product_Desc IS NULL)) AND (([Quantity] = @original_Quantity) OR ([Quantity] IS NULL AND @original_Quantity IS NULL)) AND (([Price] = @original_Price) OR ([Price] IS NULL AND @original_Price IS NULL)) AND (([Image] = @original_Image) OR ([Image] IS NULL AND @original_Image IS NULL))">
@@ -47,7 +59,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 <br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add Product" />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Admin Panel" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>
