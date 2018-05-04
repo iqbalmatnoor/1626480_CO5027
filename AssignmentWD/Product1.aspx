@@ -50,7 +50,7 @@ Product: Naruto Shippuden Volume 70
                 &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
             <ItemTemplate>
-                <asp:Image ID="Image1" runat="server" height="350" Width="275" ImageUrl='<%# Eval("Image") %>' ImageAlign="Left" />
+                <asp:Image ID="Image1" runat="server" height="350" Width="275" ImageUrl='<%# Eval("Image") %>' />
                 <br />
                 <br />
                 Product ID:
@@ -70,7 +70,7 @@ Product: Naruto Shippuden Volume 70
                 <br />
                 <br />
                 Price:
-                <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price", "{0:C}") %>' />
+                <asp:Label ID="PriceLabel" runat="server" Text='<%# Bind("Price") %>' />
                 <br />
                 <br />
 

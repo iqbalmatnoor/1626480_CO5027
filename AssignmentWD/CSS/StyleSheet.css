@@ -8,15 +8,19 @@
     background-color: #00ffff;
 }
 
-#banner
-{
+#banner {
+    background-image: url('../Image/shonen_alliance_desktop_background_by_ssvineman-d4nuk9j.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
     height: 150px;
     border: 3px solid #000000;
-    width: 1080px;
+    margin: auto;
+    width: 720px;
 }
 
 #banner p{
     font-family:'Hemi Head';
+    color: white;
     font-size: 85px;
     text-align: center;
     margin-top: 25px;
@@ -91,9 +95,17 @@
 }
 
 /*Default.aspx*/
-#cartDisp {
-    float: right;
+#tblItem {
+    float: left;
+    border-collapse: collapse;
+    width: 45%;
+    margin: 13px;
 }
+
+    #tblItem td {
+        padding: 5px 10px;
+    }
+
 
 /*Product1.aspx*/
 
@@ -125,6 +137,7 @@ textarea {
     font-size:18px;
     text-align:center;
     clear: both;
+    color:lightgray;
 }
 
 /* Edit.aspx*/
@@ -138,13 +151,3 @@ textarea {
     margin:auto;
 }
 
-#tblItem {
-    float: left;
-    border-collapse: collapse;
-    width: 45%;
-    margin: 13px;
-}
-
-#tblItem td{
-    padding: 5px 10px;
-}

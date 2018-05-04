@@ -16,9 +16,6 @@
             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" >
             <ItemStyle HorizontalAlign="Center" />
             </asp:BoundField>
-            <asp:ImageField DataImageUrlField="Image" HeaderText="Image">
-                <ItemStyle HorizontalAlign="Center" Height="150px" Width="125px" />
-            </asp:ImageField>
             <asp:HyperLinkField DataNavigateUrlFields="Product_ID" DataNavigateUrlFormatString="Edit.aspx?Id={0}" HeaderText="Edit" Text="Edit" >
             <ItemStyle HorizontalAlign="Center" />
             </asp:HyperLinkField>

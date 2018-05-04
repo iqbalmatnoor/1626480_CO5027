@@ -17,9 +17,22 @@ namespace AssignmentWD.User
 
         protected void btnConfirmPurchase_Click(object sender, EventArgs e)
         {
-            var config = ConfigManager.Instance.GetProperties();
-            var accessToken = new OAuthTokenCredential(config).GetAccessToken();
+            var clientId = "Aexl3jskdmMK4kKh8a1ScudmYCbhTeRK2iaLGqleiz94cCCAu0VPSyhYUJbkxmmTmflNdZd2iEEiJ2zH";
+            var clientSecret = "EHYN8MofvDDMwD0ObWNc-SWDuS1Fsz3Rc2jI4DXM9k5XH_cKHlsm-cUgSODNmt7kONa6RuDU5qxqQpLm";
+            var sdkConfig = new Dictionary<string, string> {
+                {"mode", "sandbox" },
+                {"clientId", "clientId" },
+                {"clientSecret", "clientSecret" }
+            };
+
+            var accessToken = new OAuthTokenCredential(clientId, clientSecret, sdkConfig).GetAccessToken();
             var apiContext = new APIContext(accessToken);
+            apiContext.Config = sdkConfig;
+
+
+            /*var config = ConfigManager.Instance.GetProperties();
+            var accessToken = new OAuthTokenCredential(config).GetAccessToken();
+            var apiContext = new APIContext(accessToken);*/
 
             var paymentId = Session["paymentId"].ToString();
 

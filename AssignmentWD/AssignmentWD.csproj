@@ -189,6 +189,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Image\cart.jpg" />
     <Content Include="Image\img1.jpg" />
+    <Content Include="Image\shonen_alliance_desktop_background_by_ssvineman-d4nuk9j.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Product1.aspx" />
     <Content Include="Register.aspx" />

@@ -22,8 +22,14 @@ namespace AssignmentWD
 
         protected void btnPurchase_Click(object sender, EventArgs e)
         {
+            var pPrice = proDescFormView.FindControl("PriceLabel") as Label;
+            var Prices = pPrice.Text;
+
+            var pName = proDescFormView.FindControl("Product_NameLabel") as Label;
+            string Product_Name = pName.Text;
+
             decimal postagePackagingCost = 3.95m;
-            decimal productPrice = 10.00m;
+            decimal productPrice = decimal.Parse(Prices);
             int quantityOfProduct = int.Parse(DDLQuantity.SelectedValue);
             decimal subTotal = (quantityOfProduct * productPrice);
             decimal total = subTotal + postagePackagingCost;
@@ -45,7 +51,7 @@ namespace AssignmentWD
             var apiContext = new APIContext(accessToken);*/
 
             var productItem = new Item();  /*can add product more than 1 such as productItem2,etc...*/
-            productItem.name = "Product 1";
+            productItem.name = Product_Name;
             productItem.currency = "USD";
             productItem.price = productPrice.ToString();
             productItem.sku = "PRO1";
@@ -88,8 +94,8 @@ namespace AssignmentWD
             payer.payment_method = "paypal";
 
             var redirectUrls = new RedirectUrls();
-            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + "~/Default.aspx";
-            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + "~/User/CompletePurchase.aspx";
+            redirectUrls.cancel_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/Default.aspx";
+            redirectUrls.return_url = "http://" + HttpContext.Current.Request.Url.Authority + HttpContext.Current.Request.ApplicationPath + "/User/CompletePurchase.aspx";
 
             var payment = Payment.Create(apiContext, new Payment
             {
